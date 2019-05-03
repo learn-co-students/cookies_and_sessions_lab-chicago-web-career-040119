@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'pry'
 
 RSpec.describe "homepage", :type => :view do
   it "adds items to the cart when they're submitted via its form" do
@@ -6,5 +7,6 @@ RSpec.describe "homepage", :type => :view do
     fill_in 'product', with: 'kumquats'
     click_button 'add to cart'
     expect(page.body).to include 'kumquats'
+
   end
 end
