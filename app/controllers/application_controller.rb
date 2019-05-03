@@ -9,3 +9,11 @@ class ApplicationController < ActionController::Base
   end
 
 end
+
+#
+# ApplicationController
+#   cart
+#     returns the user's shopping cart, an initially empty array
+#     creates a cart in the session if one doesn't exist
+#     returns the existing cart if one already exists
+#
